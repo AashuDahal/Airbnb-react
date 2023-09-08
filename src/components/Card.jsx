@@ -8,7 +8,7 @@ const Card = () => {
         <img src={image1} className='card_image' />
         <div className='desc'>
         <img src={starimg} className="card--star" />
-                <span>5.0</span>
+                <span>5.9</span>
                 <span className="gray">(6) • </span>
                 <span className="gray">USA</span>
         </div>
