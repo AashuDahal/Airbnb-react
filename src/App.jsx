@@ -10,7 +10,15 @@ function App() {
     <div>
     <Navbar />
     <Hero />
-    <Card />
+    <Card
+    img='cardimage.png'
+    starimg='starimage.png'
+    rating='5.0'
+    rat='(6) •'
+    country='USA'
+    text='Life Lessons with Kaitie Zafres'
+    price='From $136 / Person'
+    />
     </div>
   )
 }

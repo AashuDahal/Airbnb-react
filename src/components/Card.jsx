@@ -1,13 +1,12 @@
 import React from 'react'
-import image1 from '../assets/cardimage.png'
-import starimg from '../assets/starimage.png'
 
-const Card = () => {
+
+const Card = (props) => {
   return (
     <div className='card_div'>
-        <img src={image1} className='card_image' />
+        <img src={`/${props.img}`} className='card_image' alt=' ' />
         <div className='desc'>
-        <img src={starimg} className="card--star" />
+        <img src={`/${props.starimg}`} className="card--star" alt=' ' />
                 <span>5.9</span>
                 <span className="gray">(6) • </span>
                 <span className="gray">USA</span>
