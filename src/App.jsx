@@ -3,7 +3,8 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Card from './components/Card'
-
+// import image1 from '../assets/cardimage.png'
+// import starimg from '../assets/starimage.png'
 
 function App() {
   return (
