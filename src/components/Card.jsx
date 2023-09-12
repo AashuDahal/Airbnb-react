@@ -1,6 +1,4 @@
 import React from 'react'
-// import image1 from '../assets/cardimage.png'
-// import starimg from '../assets/starimage.png'
 
 const Card = (props) => {
   return (
@@ -17,5 +15,5 @@ const Card = (props) => {
     </div>
   )
 }
-//{`../assets/${props.image}`}
+
 export default Card

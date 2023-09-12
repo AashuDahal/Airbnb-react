@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
     <Navbar />
-    {/* <Hero /> */}
+    <Hero />
     <Card
     img='cardimage.png'
     starimg='starimage.png'
