@@ -3,23 +3,27 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Card from './components/Card'
-// import image1 from '../assets/cardimage.png'
-// import starimg from '../assets/starimage.png'
+import data from './data'
 
 function App() {
+  const cardData=data.map(cardobj=>{
+    return <Card
+        img={cardobj.coverImg}
+        rating={cardobj.rating}
+        rat={cardobj.reviewCount}
+        country={cardobj.location}
+        text={cardobj.title}
+        price={cardobj.price}
+        openspots={cardobj.openSpots}
+             />
+  })
   return (
     <div>
     <Navbar />
     <Hero />
-    <Card
-    img='cardimage.png'
-    starimg='starimage.png'
-    rating='5.0'
-    rat='(6) •'
-    country='USA'
-    text='Life Lessons with Kaitie Zafres'
-    price='From $136 / Person'
-    />
+    <section className='cards-list'>
+    {cardData}
+    </section>
     </div>
   )
 }
