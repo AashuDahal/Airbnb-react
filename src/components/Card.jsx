@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Card = (props) => {
+  const {item}=props
   let badge
   if(props.openspots==0){
     badge='SOLD OUT'
@@ -11,15 +12,15 @@ const Card = (props) => {
   return (
     <div className='card_div'>
       {badge && <div className='card--badge'>{badge}</div>}
-        <img src={`/${props.img}`} className='card_image' />
+        <img src={`/${item.coverImg}`} className='card_image' />
         <div className='desc'>
         <img src='/starimage.png' className="card--star" />
-                <span>{props.rating}</span>
-                <span className="gray">{props.rat}</span>
-                <span className="gray">{props.country}</span>
+                <span>{item.stats.rating}</span>
+                <span className="gray">{item.stats.reviewCount}</span>
+                <span className="gray">{item.location}</span>
         </div>
-            <p>{props.text}</p>
-            <p><span className="bold">$ {props.price}</span> / person</p>   
+            <p>{item.title}</p>
+            <p><span className="bold">$ {item.price}</span> / person</p>   
     </div>
   )
 }
